@@ -1,0 +1,3 @@
+This folder contains all files and directories for Android application.
+Created branch for android
+created android subbranch backend

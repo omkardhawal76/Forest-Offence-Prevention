@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">forest</string>
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">TFL Detect</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+    <string name="mapbox_access_token">pk.eyJ1Ijoib21rYXIyMSIsImEiOiJjanRxc3hoamcwZDNtNGRxZGNnaXF2ZHU3In0.Ovq0lb6DSdnLkIMMb32UPA</string>
+    <string name="user_location_permission_explanation">We need your GPS location to show your position on map</string>
+    <string name="user_location_permission_not_granted">Cannot show user location since Location permission denied </string>
+    <string name="space_station_toast">My icon</string>
+</resources>

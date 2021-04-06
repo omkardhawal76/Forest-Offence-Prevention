@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdd998">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActionTakenActivity">
+
+        <TextView
+            android:id="@+id/tvEventDesc"
+            android:layout_width="134dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Event Description : "
+            android:textColor="#900d0d"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/etEventDescField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirmation"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/etEventDescField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            app:boxStrokeColor="#5e6f64"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toEndOf="@+id/tvEventDesc"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirmation"
+            app:counterEnabled="true"
+            app:counterMaxLength="300"
+            app:counterTextAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEventDesc"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:maxLines="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="134dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Event Description : "
+            android:textColor="#900d0d"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEventDescField"
+            app:layout_constraintVertical_bias="0.031" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#5e6f64"
+            android:layout_marginTop="84dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/etEventDescField">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:scrollbars="vertical"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="134dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Event Description : "
+            android:textColor="#900d0d"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText2Field"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextField"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editText2Field"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#5e6f64"
+            android:layout_marginTop="84dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextField">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText2"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:scrollbars="vertical" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCamera"
+            android:layout_width="114dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:background="#3f3f44"
+            android:backgroundTint="#3f3f44"
+            android:elevation="2dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Camera"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2Field" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submit"
+            android:layout_width="114dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:background="#3f3f44"
+            android:backgroundTint="#3f3f44"
+            android:elevation="2dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Submit"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2Field" />
+
+        <View
+            android:id="@+id/viewDivider1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="32dp"
+            android:background="#62760c"
+            app:layout_constraintBottom_toTopOf="@+id/editTextField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEventDescField" />
+
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="#62760c"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2Field" />
+
+        <View
+            android:id="@+id/viewDivider3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="#62760c"
+            app:layout_constraintBottom_toTopOf="@+id/doneBg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2Field" />
+
+        <ImageView
+            android:id="@+id/doneBg"
+            android:layout_width="73dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/moon"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@+id/submit"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toEndOf="@+id/btnCamera"
+            app:layout_constraintTop_toBottomOf="@+id/viewDivider1" />
+
+        <ImageView
+            android:id="@+id/doneImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/done"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/doneBg"
+            app:layout_constraintEnd_toEndOf="@+id/doneBg"
+            app:layout_constraintStart_toStartOf="@+id/doneBg"
+            app:layout_constraintTop_toTopOf="@+id/doneBg" />
+
+
+        <TextView
+            android:id="@+id/tvConfirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/bungee"
+            android:textColor="#3f3f44"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/etEventDescField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
